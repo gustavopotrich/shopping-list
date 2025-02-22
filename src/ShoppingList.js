@@ -106,7 +106,7 @@ function ShoppingList() {
           </select>
         </div>
         <div>
-          <button onClick={addItem}>Add</button>
+          <button onClick={() => addItem(inputValue)}>Add</button>
         </div>
       </div>
 
