@@ -43,6 +43,7 @@ function ShoppingList() {
     unit = "",
     category = categoryValue
   ) => {
+    console.log("itemName:", itemName, "Type:", typeof itemName);
     if (itemName.trim() !== "") {
       setItems([...items, { itemName, quantity, unit, category }]);
       setInputValue("");
