@@ -1,0 +1,201 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* ShoppingList.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+  width: 100%;
+}
+
+/* Shopping List Container */
+.shopping-list {
+  width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #28a7467a;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #fff;
+}
+
+/* Headings */
+.shopping-list h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Input Fields */
+.shopping-list input {
+  width: calc(100% - 30px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.shopping-list button {
+  padding: 10px;
+  margin-left: 5px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70px;
+  transition: background-color 0.5s ease-out;
+}
+
+.shopping-list button:hover {
+  background-color: #218838;
+}
+
+/* List Styles */
+.shopping-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.shopping-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Form Container */
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input Form */
+.input-form {
+  width: 100%;
+}
+
+/* Filter Input */
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.filter input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Edit and Remove Buttons */
+.edit-remove-btns button {
+  margin-left: 5px;
+}
+
+.input-form select,
+.edit-form select,
+.filter select {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.edit-form input {
+  width: calc(100% - 16px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: #f1f1f1;
+  color: #000000;
+}
+
+body.light-mode h1 {
+  color: #000000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode h1 {
+  color: #ffffff;
+}
+
+/* Example styles for other elements */
+.shopping-list {
+  padding: 20px;
+}
+
+.shopping-list.dark-mode {
+  background-color: #444444;
+}
+
+.toggle-button {
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  margin-left: 5px;
+  border: none;
+  background-color: transparent !important;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70px;
+  transition: background-color 0.5sease-out;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button .fa-toggle-on {
+  color: white; /* Green for on */
+}
+
+.toggle-button .fa-toggle-off {
+  color: #444444; /* Red for off */
+}
